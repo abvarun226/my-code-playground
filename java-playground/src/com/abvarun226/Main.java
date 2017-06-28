@@ -10,7 +10,7 @@ class Stack {
 
     public void push(int item) {
         if(tos >= 9) {
-            System.out.println("Stack overflow");
+            System.out.println("StackTest overflow");
         } else {
             stck[++tos] = item;
         }
@@ -18,7 +18,7 @@ class Stack {
 
     public int pop() {
         if(tos < 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("StackTest Underflow");
             return 0;
         } else {
             return stck[tos--];
